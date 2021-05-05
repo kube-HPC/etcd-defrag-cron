@@ -10,5 +10,6 @@ for i in $(seq 0 $((${ETCD_COUNT} - 1))); do
     ENDPOINT=$ETCD_PROTOCOL://$SET_NAME-$i.$SET_NAME:2379
     echo defraging $ENDPOINT
     time etcdctl defrag --endpoints=$ENDPOINT --command-timeout=200s
+    echo sleeping for $SLEEP seconds
     sleep $SLEEP
 done
