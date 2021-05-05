@@ -1,5 +1,4 @@
 FROM alpine
-MAINTAINER yehiyam livneh
 ENV ETCD_VERSION 3.3.1
 ENV ETCD_ENDPOINT 127.0.0.1:4001
 ENV ETCDCTL_API=3
@@ -16,4 +15,4 @@ RUN apk add --update ca-certificates \
  && rm /var/cache/apk/*
 
 ADD run.sh /run.sh
-ENTRYPOINT [ "/run.sh" ]
+CMD [ "/run.sh" ]

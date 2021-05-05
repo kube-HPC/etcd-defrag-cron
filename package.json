@@ -1,0 +1,20 @@
+{
+  "name": "etcd-defrag-cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./dockerfile/build.sh etcd-defrag-cron"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kube-HPC/etcd-defrag-cron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kube-HPC/etcd-defrag-cron/issues"
+  },
+  "homepage": "https://github.com/kube-HPC/etcd-defrag-cron#readme"
+}
